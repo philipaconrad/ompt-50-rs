@@ -1,0 +1,9 @@
+[package]
+name = "ompt-50-sys"
+version = "0.1.0"
+description = "Low-Level Rust bindings to the OMPT 5.0 API."
+authors = ["Philip Conrad <philipaconrad@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+
