@@ -84,14 +84,14 @@
 
 
 #[macro_use]
-extern crate ompt_50_sys;
+pub extern crate ompt_50_sys as sys;
 
 use std::fmt;
 use std::mem::{transmute};
 use std::option::{Option};
 use std::vec::*;
 use std::ffi::CString;
-use ompt_50_sys as ffi;
+use sys as ffi;
 
 
 /// This structure contains the necessary context to construct/run an OMPT tool at runtime.
