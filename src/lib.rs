@@ -106,6 +106,8 @@ pub struct OMPTTool {
     tool_data: ffi::Data,
 }
 
+unsafe impl Send for OMPTTool {}
+unsafe impl Sync for OMPTTool {}
 
 impl OMPTTool {
     pub fn new(initializer: ffi::InitializeFn,
